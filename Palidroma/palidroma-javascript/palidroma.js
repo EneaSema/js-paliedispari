@@ -14,6 +14,12 @@ function reverseWord(word) {
 const requestWordUser = prompt("Inserisci una parola");
 console.log(reverseWord(requestWordUser));
 
+if (requestWordUser == reverseWord(requestWordUser)) {
+  console.log("Parola palidroma");
+} else {
+  console.log("Parola non palidroma");
+}
+
 // // #######################################################
 // // FUNCTIONS
 // //
