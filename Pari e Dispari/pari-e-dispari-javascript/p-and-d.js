@@ -1,4 +1,4 @@
-console.log("ciao");
+// console.log("ciao");
 
 // Pari e Dispari
 // 1 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
@@ -7,11 +7,14 @@ console.log("ciao");
 // 4 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // 5 Dichiariamo chi ha vinto.
 
-const choiceuser = prompt('Scegli pari o dispari');
+// scelta pari o dispari
+// const choiceUser = "pari";
 
-if (choiceuser ==='pari')[
-    const numberUser = Math.floor(Math.random()*5+1);
-    const numberPc =
-
-]
-
+const choiseUser = prompt("scegli ta pari o dispari");
+if (choiseUser === "pari") {
+  console.log("Hai scelto", choiseUser);
+} else if (choiseUser === "dispari") {
+  console.log("Hai scelto", choiseUser);
+} else if (choiseUser !== "pari" || choiseUser !== "dispari") {
+  console.log("Valore non consentito");
+}
