@@ -6,3 +6,12 @@ console.log("ciao");
 // 3 Sommiamo i due numeri
 // 4 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // 5 Dichiariamo chi ha vinto.
+
+const choiceuser = prompt('Scegli pari o dispari');
+
+if (choiceuser ==='pari')[
+    const numberUser = Math.floor(Math.random()*5+1);
+    const numberPc =
+
+]
+
