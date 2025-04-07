@@ -8,7 +8,6 @@
 // 5 Dichiariamo chi ha vinto.
 
 // scelta pari o dispari
-// const choiceUser = "pari";
 
 const choiseUser = prompt("Scegli tra pari o dispari");
 if (choiseUser === "pari") {
@@ -18,8 +17,10 @@ if (choiseUser === "pari") {
   console.log("Hai scelto", choiseUser);
   // console.log(randomNumber(0));
 } else if (choiseUser !== "pari" || choiseUser !== "dispari") {
-  console.log("Valore non consentito");
+  console.log("Valore non consentito! Scegli tra pari o dispari");
 }
+
+// creazione funzione per generarenmero random user
 let currentNumberUser;
 function randomNumberUser(generatedNumberUser) {
   currentNumberUser = generatedNumberUser;
@@ -28,6 +29,7 @@ function randomNumberUser(generatedNumberUser) {
 }
 console.log(randomNumberUser(0));
 
+// creazione funzione per generarenmero random user
 let currentNumberPc;
 function randomNumberPc(generatedNumberPc) {
   currentNumberPc = generatedNumberPc;
@@ -36,10 +38,11 @@ function randomNumberPc(generatedNumberPc) {
 }
 console.log(randomNumberPc(0));
 
+// somma dei numeri random generati e stampa
 let addNumbers = currentNumberUser + currentNumberPc;
 console.log(addNumbers);
 
-//
+// creazione funzione per verificare se somma è pari o dispari con relativo messaggio
 let result = 0;
 function verificatedAddNumbers(plus) {
   result = plus;
