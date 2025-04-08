@@ -10,53 +10,64 @@
 // scelta pari o dispari
 
 const choiseUser = prompt("Scegli tra pari o dispari");
-if (choiseUser === "pari") {
-  console.log("Hai scelto", choiseUser);
-  // console.log(randomNumber(0));
-} else if (choiseUser === "dispari") {
-  console.log("Hai scelto", choiseUser);
-  // console.log(randomNumber(0));
-} else if (choiseUser !== "pari" || choiseUser !== "dispari") {
-  console.log("Valore non consentito! Scegli tra pari o dispari");
-}
-
-// creazione funzione per generarenmero random user
-let currentNumberUser;
-function randomNumberUser(generatedNumberUser) {
-  currentNumberUser = generatedNumberUser;
-  currentNumberUser = currentNumberUser + Math.floor(Math.random() * 5 + 1);
-  return currentNumberUser;
-}
-console.log(randomNumberUser(0));
-
-// creazione funzione per generarenmero random user
-let currentNumberPc;
-function randomNumberPc(generatedNumberPc) {
-  currentNumberPc = generatedNumberPc;
-  currentNumberPc = currentNumberPc + Math.floor(Math.random() * 5 + 1);
-  return currentNumberPc;
-}
-console.log(randomNumberPc(0));
-
-// somma dei numeri random generati e stampa
-let addNumbers = currentNumberUser + currentNumberPc;
-console.log(addNumbers);
-
-// creazione funzione per verificare se somma è pari o dispari con relativo messaggio
-let result = 0;
-function verificatedAddNumbers(plus) {
-  result = plus;
-  if (
-    (choiseUser === "pari" && result % 2 === 0) ||
-    (choiseUser === "dispari" && result % 2 === 1)
-  ) {
-    console.log("Hai vinto");
-  } else if (
-    (choiseUser === "pari" && result % 2 !== 0) ||
-    (choiseUser === "dispari" && result % 2 !== 1)
-  ) {
-    console.log("hai perso");
+// if (choiseUser === "pari") {
+//   console.log("Hai scelto", choiseUser);
+//   // console.log(randomNumber(0));
+// } else if (choiseUser === "dispari") {
+//   console.log("Hai scelto", choiseUser);
+//   // console.log(randomNumber(0));
+// } else if (choiseUser !== "pari" || choiseUser !== "dispari") {
+//   console.log("Valore non consentito! Scegli tra pari o dispari");
+// }
+let currentResponse = "";
+function verificatedData(response) {
+  currentResponse += response;
+  if (currentResponse === "pari" || currentResponse === "dispari") {
+    console.log("Hai scelto", currentResponse);
+  } else {
+    console.log("errore");
   }
-  return result;
+  return response;
 }
-console.log(verificatedAddNumbers(addNumbers));
+console.log(verificatedData(choiseUser));
+
+// // creazione funzione per generarenmero random user
+// let currentNumberUser;
+// function randomNumberUser(generatedNumberUser) {
+//   currentNumberUser = generatedNumberUser;
+//   currentNumberUser = currentNumberUser + Math.floor(Math.random() * 5 + 1);
+//   return currentNumberUser;
+// }
+// console.log(randomNumberUser(0));
+
+// // creazione funzione per generarenmero random pc
+// let currentNumberPc;
+// function randomNumberPc(generatedNumberPc) {
+//   currentNumberPc = generatedNumberPc;
+//   currentNumberPc = currentNumberPc + Math.floor(Math.random() * 5 + 1);
+//   return currentNumberPc;
+// }
+// console.log(randomNumberPc(0));
+
+// // somma dei numeri random generati e stampa
+// let addNumbers = currentNumberUser + currentNumberPc;
+// console.log(addNumbers);
+
+// // creazione funzione per verificare se somma è pari o dispari con relativo messaggio
+// let result = 0;
+// function verificatedAddNumbers(plus) {
+//   result = plus;
+//   if (
+//     (choiseUser === "pari" && result % 2 === 0) ||
+//     (choiseUser === "dispari" && result % 2 === 1)
+//   ) {
+//     console.log("Hai vinto");
+//   } else if (
+//     (choiseUser === "pari" && result % 2 !== 0) ||
+//     (choiseUser === "dispari" && result % 2 !== 1)
+//   ) {
+//     console.log("hai perso");
+//   }
+//   return result;
+// }
+// console.log(verificatedAddNumbers(addNumbers));
